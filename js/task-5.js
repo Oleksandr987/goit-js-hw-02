@@ -1,9 +1,9 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-restricted-syntax */
-const trueWords = ['SPAM', 'spam', 'Spam', 'SALE', 'sale', 'Sale'];
 function checkForSpam(str) {
-  for (let i = 0; i < trueWords.length; i += 1) {
-    if (str.includes(trueWords[i])) {
+  const wordsLowerCase = str.toLowerCase();
+  for (let i = 0; i < wordsLowerCase.length; i += 1) {
+    if (wordsLowerCase.includes('sale') || wordsLowerCase.includes('spam')) {
       return true;
     }
   }
