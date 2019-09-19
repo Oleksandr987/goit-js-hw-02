@@ -6,7 +6,7 @@ function checkForSpam(str) {
     if (wordsLowerCase.includes('sale') || wordsLowerCase.includes('spam')) {
       return true;
   } else {
-    return falce;
+    return false;
   }
 }
 console.log(checkForSpam('Latest technology news')); // false
