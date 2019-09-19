@@ -5,8 +5,9 @@ function checkForSpam(str) {
 //   for (let i = 0; i < wordsLowerCase.length; i += 1) {
     if (wordsLowerCase.includes('sale') || wordsLowerCase.includes('spam')) {
       return true;
-  }
+  } else {
   return false;
+  }
 }
 console.log(checkForSpam('Latest technology news')); // false
 
