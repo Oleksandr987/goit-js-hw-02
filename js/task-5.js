@@ -2,12 +2,10 @@
 /* eslint-disable no-restricted-syntax */
 function checkForSpam(str) {
   const wordsLowerCase = str.toLowerCase();
-//   for (let i = 0; i < wordsLowerCase.length; i += 1) {
-    if (wordsLowerCase.includes('sale') || wordsLowerCase.includes('spam')) {
-      return true;
-  } else {
-    return false;
+  if (wordsLowerCase.includes('sale') || wordsLowerCase.includes('spam')) {
+    return true;
   }
+  return false;
 }
 console.log(checkForSpam('Latest technology news')); // false
 
